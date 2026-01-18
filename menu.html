@@ -31,10 +31,97 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="container my-5 pt-4">
         <!--Saludo-->
+        <div class="d-flex justify-content-between align-items-center mb-4" id="ingresosMensuales">
+            <h1 class="h3 font-weight-bold text-dark">¡Hola de nuevo! 👋🏼</h1>
+        </div>
         <!--cards: sueldo, total gasto, disponible-->
+        <section class="row mb-4">
+            <div class="col-md-4 mb-3">
+                <div class="card tarjeta-tablero shadow-sm">
+                    <div class="card-body">
+                        <p class="text-uppercase small mb-2 font-weight-bold opacidad-75">Ingreso Mensual</p>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h2 class="font-weight-bold m-0">$ 1.500.000</h2>
+                            <i class="bi bi-arrow-down-circle-fill text-success icono-lg"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card tarjeta-tablero shadow-sm">
+                    <div class="card-body">
+                        <p class="text-uppercase small mb-2 font-weight-bold opacidad-75">Gastos Totales</p>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h2 class="font-weight-bold m-0">$ 850.000</h2>
+                            <i class="bi bi-arrow-up-circle-fill text-danger icono-lg"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-4 mb-3">
+                <div class="card tarjeta-tablero fondo-destacado shadow-sm">
+                    <div class="card-body">
+                        <p class="text-uppercase small mb-2 font-weight-bold opacidad-75">Saldo Disponible</p>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h2 class="font-weight-bold m-0">$ 650.000</h2>
+                            <i class="bi bi-wallet-fill icono-lg"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!--tabla de historial de gastos-->
+        <div class="row">
+            <div class="col-lg-7 mb-4">
+                <div class="card tarjeta-contenido shadow h-100" id="historial">
+                    <div class="card-header bg-transparent border-0 pt-4 px-4">
+                        <h3 class="h5 font-weight-bold m-0">Historial de Movimientos</h3>
+                    </div>
+                    <div class="card-body px-0">
+                        <!--tabla historial-->
+                        <div class="table-responsive">
+                            <table class="table table-hover tabla-personalizada">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="pl-4">Concepto</th>
+                                        <th scope="col">Fecha</th>
+                                        <th scope="col">Categoría</th>
+                                        <th scope="col" class="text-right pr-4">Monto</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="pl-4 font-weight-bold">Compras en el Super</td>
+                                        <td class="text-muted small">15 Ene</td>
+                                        <td><span class="badge badge-light">Comida</span></td>
+                                        <td class="text-right pr-4 text-danger font-weight-bold">-$ 120.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pl-4 font-weight-bold">Netflix</td>
+                                        <td class="text-muted small">12 Ene</td>
+                                        <td><span class="badge badge-light">Ocio</span></td>
+                                        <td class="text-right pr-4 text-danger font-weight-bold">-$ 15.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pl-4 font-weight-bold">Mi Sueldo</td>
+                                        <td class="text-muted small">01 Ene</td>
+                                        <td><span class="badge badge-light">Salario</span></td>
+                                        <td class="text-right pr-4 text-success font-weight-bold">+$ 1.500.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pl-4 font-weight-bold">Uber Viaje</td>
+                                        <td class="text-muted small">28 Dic</td>
+                                        <td><span class="badge badge-light">Transporte</span></td>
+                                        <td class="text-right pr-4 text-danger font-weight-bold">-$ 12.500</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div> 
+                    </div>
+            </div>
+        </div>
         <!--metas o propositos-->
     </main>
     <footer></footer>
