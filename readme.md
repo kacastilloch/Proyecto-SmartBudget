@@ -1,4 +1,6 @@
-# Resumen del Proyecto SmartBudget
+# Descripción del Proyecto
+
+**SmartBudget** es una aplicación web diseñada para la gestión visual de finanzas personales. Su objetivo es ayudar a los usuarios a visualizar rápidamente su salud financiera (ingresos, gastos y ahorros) mediante una interfaz limpia, intuitiva y responsive.
 
 ## Estructura de Carpetas
 
@@ -22,10 +24,10 @@ assets/
 
 El código está dividido en varios archivos SASS que se importan en `main.scss`, lo que permite una fácil modularidad y mantenimiento. 
 
-- **Variables y Mixins**: Se definen colores, tipografías y mixins para reutilizar estilos en todo el proyecto.
-- **Base**: Incluye reset de estilos y tipografía base para asegurar una apariencia consistente.
-- **Layout**: Contiene estilos para la estructura general del sitio, como encabezados y pies de página.
-- **Componentes**: Define estilos para elementos reutilizables como botones, tarjetas y tablas.
-- **Páginas**: Estilos específicos para las diferentes páginas del proyecto.
+### ✨ Características Clave
+1.  **Variables Globales:** Se definieron variables como `$color-menu` (#2B222C) y `$color-fondo-principal` (#F2D974) para un control centralizado del tema visual.
+2.  **Componentes Híbridos:** Se personalizò la base de Bootstrap con estilos propios para lograr una identidad única sin perder la funcionalidad responsiva.
+3.  **Visualización de Datos:** Implementación de barras de progreso dinámicas (`progress-bar`) para las metas de ahorro y tablas estilizadas para el historial de transacciones.
+4.  **Responsive Design:** Adaptabilidad total a 3 breakpoints (Móvil, Tablet, Desktop) utilizando clases `col-12`, `col-md`, `col-lg` y utilidades flexbox.
 
 Este enfoque modular permite un desarrollo más eficiente y un mantenimiento más sencillo del código.  
