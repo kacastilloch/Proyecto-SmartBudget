@@ -1,3 +1,258 @@
+* {
+  box-sizing: border-box;
+}
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #F2D974;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: black;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.encabezado-principal {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.fondo-pie-personalizado {
+  background-color: #2B222C;
+  color: #F2D974 !important;
+  padding: 2rem 0;
+  margin-top: auto;
+}
+.fondo-pie-personalizado p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+section {
+  padding: 3rem 0;
+}
+
+.btn-accion {
+  background-color: #5E4352;
+  color: #C7956D;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-accion:hover {
+  background-color: rgb(184.8613861386, 122.2376237624, 72.1386138614);
+  color: #2B222C;
+  border: 1px solid #2B222C;
+  text-decoration: none;
+}
+
+.btn-nav {
+  font-family: "Sriracha", cursive;
+  color: #5E4352 !important;
+  font-weight: 800;
+  transition: color 0.3s ease;
+  border: 2px solid #5E4352;
+  border-radius: 8px;
+  background-color: #C7956D;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-nav:hover {
+  color: #C7956D !important;
+  background-color: #5E4352;
+}
+.btn-nav.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.tarjeta-personalizada {
+  background-color: #C7956D;
+  border: 1px solid #5E4352;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.tarjeta-personalizada:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.tarjeta-personalizada .card-header {
+  background-color: #5E4352;
+  color: #F2D974;
+  border-bottom: none;
+  font-weight: bold;
+  text-align: center;
+}
+.tarjeta-personalizada .card-body {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.carrusel-personalizado {
+  border-bottom: 5px solid #5E4352;
+}
+.carrusel-personalizado .carousel-item {
+  height: 350px;
+  background-color: #2B222C;
+}
+.carrusel-personalizado .carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+@media (max-width: 768px) {
+  .carrusel-personalizado .carousel-item {
+    height: 250px;
+  }
+}
+
+.fondo-nav-personalizado {
+  background-color: #2B222C !important;
+}
+
+.navbar-brand {
+  font-family: "Sriracha", cursive;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #C7956D !important;
+}
+
+.tabla-personalizada {
+  margin-bottom: 0;
+}
+.tabla-personalizada thead th {
+  border-top: none;
+  border-bottom: 2px solid rgba(243, 235, 235, 0.363);
+  color: rgba(0, 0, 0, 0.9);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+.tabla-personalizada tbody td {
+  vertical-align: middle;
+  border-top: 1px solid rgba(59, 58, 58, 0.459);
+  color: rgba(0, 0, 0, 0.8);
+}
+.tabla-personalizada .text-muted {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+.tabla-personalizada .badge-light {
+  background-color: #5E4352;
+  color: #F2D974;
+}
+.tabla-personalizada tbody tr:hover {
+  background-color: rgba(165, 159, 159, 0.26);
+}
+.tabla-personalizada tbody tr:hover td {
+  border-top-color: rgba(255, 255, 255, 0.747);
+}
+
+.eslogan-principal {
+  color: #2B222C;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  .eslogan-principal {
+    font-size: 2rem;
+  }
+}
+
+.subtitulo-eslogan {
+  color: rgb(14.8846153846, 11.7692307692, 15.2307692308);
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.seccion-motivos {
+  background-color: #965D62;
+  border-radius: 10px;
+  padding: 3rem;
+  margin: 2rem auto;
+}
+.seccion-motivos h2 {
+  color: #2B222C;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.seccion-motivos .lista-beneficios {
+  text-align: left;
+  font-size: 1.1rem;
+  color: rgb(14.8846153846, 11.7692307692, 15.2307692308);
+}
+.seccion-motivos .lista-beneficios ul {
+  display: flex;
+  gap: 10px;
+}
+
+h1.h3 {
+  color: #2B222C;
+  font-family: "Sriracha", cursive;
+  padding: 1rem 0;
+}
+@media (max-width: 768px) {
+  h1.h3 {
+    font-size: 1.5rem;
+  }
+}
+
+.tarjeta-tablero, .tarjeta-contenido {
+  background-color: #C7956D;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  color: rgb(0, 0, 0);
+}
+.tarjeta-tablero .icono-lg, .tarjeta-contenido .icono-lg {
+  font-size: 2rem;
+  opacity: 0.8;
+}
+.tarjeta-tablero .opacidad-75, .tarjeta-contenido .opacidad-75 {
+  color: rgba(236, 230, 230, 0.87);
+}
+
+.fondo-destacado {
+  background-color: #5E4352;
+  border: none;
+  color: black;
+}
+.fondo-destacado .opacidad-75 {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.item-meta .texto-primario-personalizado {
+  color: #2B222C;
+  font-size: 1.2rem;
+}
+.item-meta .text-muted {
+  color: rgba(0, 0, 0, 0.7) !important;
+}
+.item-meta .progress {
+  background-color: rgba(80, 74, 74, 0.342);
+  border-radius: 10px;
+}
+.item-meta .fondo-progreso-personalizado {
+  background-color: #2B222C;
+}
 
 /*# sourceMappingURL=main.css.map */

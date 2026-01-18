@@ -1,0 +1,43 @@
+.btn-accion {
+    background-color: $color-detalles;
+    color: $color-fondo-tarjeta;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover {
+        background-color: darken($color-fondo-tarjeta, 10%);
+        color: $color-menu;
+        border: 1px solid $color-menu;
+        text-decoration: none;
+    }
+}
+
+//botón barra de navegción
+.btn-nav {
+    font-family: $fuente-titulos;
+    color: $color-detalles !important;
+    font-weight: 800;
+    transition: color 0.3s ease;
+    border: 2px solid $color-detalles;
+    border-radius: 8px;
+    background-color: $color-fondo-tarjeta;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover {
+        color: $color-fondo-tarjeta !important;
+        background-color: $color-detalles;
+    }
+    
+    &.active {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+}

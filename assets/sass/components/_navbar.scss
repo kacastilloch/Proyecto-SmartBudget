@@ -1,0 +1,11 @@
+// _navbar.scss
+.fondo-nav-personalizado {
+    background-color: $color-menu !important;
+}
+
+.navbar-brand {
+    font-family: $fuente-titulos;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: $color-fondo-tarjeta !important;
+}

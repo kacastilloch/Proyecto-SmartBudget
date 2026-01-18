@@ -1,0 +1,21 @@
+.carrusel-personalizado {
+    border-bottom: 5px solid $color-detalles;
+    
+    .carousel-item {
+        height: 350px;
+        background-color: $color-menu;
+        
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover; 
+            object-position: center;
+        }
+    }
+    
+    @include mobile {
+        .carousel-item {
+            height: 250px;
+        }
+    }
+}

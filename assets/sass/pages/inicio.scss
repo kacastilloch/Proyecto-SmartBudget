@@ -1,0 +1,41 @@
+.eslogan-principal {
+    color: $color-menu;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    
+    @include mobile {
+        font-size: 2rem; 
+    }
+}
+
+.subtitulo-eslogan {
+    color: darken($color-menu, 10%);
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.seccion-motivos {
+    background-color: $color-boton;
+    border-radius: 10px;
+    padding: 3rem;
+    margin: 2rem auto;
+
+    h2 {
+        color: $color-menu;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .lista-beneficios {
+        text-align: left;
+        font-size: 1.1rem;
+        color: darken($color-menu, 10%);
+
+        ul {
+            display: flex;
+            gap: 10px;
+        }
+    }
+}

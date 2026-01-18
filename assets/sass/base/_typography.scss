@@ -1,0 +1,12 @@
+body {
+    font-family: $fuente-principal;
+    background-color: $color-fondo-principal;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: darken($color-menu, 20%);
+    font-weight: 700;
+    margin-bottom: $espaciado-base;
+}

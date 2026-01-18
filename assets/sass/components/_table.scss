@@ -1,0 +1,33 @@
+.tabla-personalizada {
+    margin-bottom: 0;
+
+    thead th {
+        border-top: none;
+        border-bottom: 2px solid rgba(243, 235, 235, 0.363);
+        color: rgba(0, 0, 0, 0.9);
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+    }
+
+    tbody td {
+        vertical-align: middle;
+        border-top: 1px solid rgba(59, 58, 58, 0.459);
+        color: rgba(0, 0, 0, 0.8);
+    }
+
+    .text-muted {
+        color: rgba(0, 0, 0, 0.6) !important;
+    }
+    .badge-light {
+        background-color: $color-detalles;
+        color: $color-fondo-principal; 
+    }
+
+    tbody tr:hover {
+        background-color: rgba(165, 159, 159, 0.26);
+        td {
+            border-top-color: rgba(255, 255, 255, 0.747); 
+        }
+    }
+}

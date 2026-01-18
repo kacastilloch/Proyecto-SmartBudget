@@ -1,0 +1,11 @@
+.fondo-pie-personalizado {
+    background-color: $color-menu;
+    color: $color-fondo-principal !important;
+    padding: 2rem 0;
+    margin-top: auto;
+    
+    p {
+        margin: 0;
+        font-size: 0.9rem;
+    }
+}

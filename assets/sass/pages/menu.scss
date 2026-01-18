@@ -1,0 +1,59 @@
+//titulos
+h1.h3 {
+    color: $color-menu;
+    font-family: $fuente-titulos;
+    padding: 1rem 0;
+
+    @include mobile {
+        font-size: 1.5rem;
+    }
+}
+
+//cards
+.tarjeta-tablero, .tarjeta-contenido {
+    background-color: $color-fondo-tarjeta;
+    border: 1px solid rgba(0,0,0,0.05);
+    border-radius: 12px;
+    color: rgb(0, 0, 0);
+    
+    .icono-lg {
+        font-size: 2rem;
+        opacity: 0.8;
+    }
+    .opacidad-75 {
+        color: rgba(236, 230, 230, 0.87);
+    }
+}
+
+//saldo disponible
+.fondo-destacado {
+    background-color: $color-detalles;
+    border: none;
+    color: black;
+    
+    .opacidad-75 {
+        color: rgba(255, 255, 255, 0.8);
+    }
+}
+
+.item-meta {
+    .texto-primario-personalizado {
+        color: $color-menu;
+        font-size: 1.2rem;;
+    }
+    //texto de monto
+    .text-muted {
+        color: rgba(0, 0, 0, 0.7) !important;
+    }
+
+    //barras de prograso
+    .progress {
+        background-color: rgba(80, 74, 74, 0.342);
+        border-radius: 10px;
+    }
+
+    //prograso completar
+    .fondo-progreso-personalizado {
+        background-color: $color-menu;
+    }
+}
