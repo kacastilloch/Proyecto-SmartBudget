@@ -1,0 +1,19 @@
+//utils
+@import 'utils/variables';
+@import 'utils/mixins';
+//base
+@import 'base/reset';
+@import 'base/typography';
+//layout
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/grid';
+//components
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/carousel';
+@import 'components/navbar';
+@import 'components/table';
+//pages
+@import 'pages/inicio';
+@import 'pages/menu';
